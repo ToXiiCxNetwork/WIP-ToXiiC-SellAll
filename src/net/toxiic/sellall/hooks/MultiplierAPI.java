@@ -1,9 +1,7 @@
 package net.toxiic.sellall.hooks;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Server;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.PluginManager;
 
 
 public class MultiplierAPI

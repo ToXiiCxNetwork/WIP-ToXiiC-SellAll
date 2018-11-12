@@ -10,7 +10,8 @@ import org.bukkit.entity.Player;
 
 public class RankupAPI
 {
-  private static final String rankupPluginName = "ToXiiCRanks";
+  @SuppressWarnings("unused")
+private static final String rankupPluginName = "ToXiiCRanks";
   
   public static String getRank(Player player)
   {

@@ -1,10 +1,6 @@
 package net.toxiic.sellall;
 
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.logging.Logger;
-import net.milkbowl.vault.economy.Economy;
 import net.toxiic.sellall.hooks.MultiplierAPI;
 import net.toxiic.sellall.hooks.RankupAPI;
 import net.toxiic.sellall.hooks.Vault;
@@ -16,21 +12,13 @@ import org.black_ixx.bossshop.core.BSShop;
 import org.black_ixx.bossshop.core.enums.BSBuyType;
 import org.black_ixx.bossshop.events.BSPlayerPurchaseEvent;
 import org.black_ixx.bossshop.events.BSPlayerPurchasedEvent;
-import org.black_ixx.bossshop.managers.ClassManager;
-import org.black_ixx.bossshop.managers.Settings;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.command.PluginCommand;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.permissions.Permission;
-import org.bukkit.plugin.PluginDescriptionFile;
-import org.bukkit.plugin.PluginLoader;
-import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class SellAll

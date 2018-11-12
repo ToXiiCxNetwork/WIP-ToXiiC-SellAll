@@ -61,7 +61,7 @@ public enum Lang
     String strMessage = lang.getMessage();
     if (!strMessage.isEmpty())
     {
-      List<String> messages = new ArrayList();
+      List<String> messages = new ArrayList<String>();
       if (strMessage.contains("\n"))
       {
         String[] messageSplit = strMessage.split("\n");
@@ -74,7 +74,7 @@ public enum Lang
         messages.add(strMessage);
       }
       String message;
-      for (Iterator i$ = messages.iterator(); i$.hasNext(); sender.sendMessage(message)) {
+      for (Iterator<String> i$ = messages.iterator(); i$.hasNext(); sender.sendMessage(message)) {
         message = (String)i$.next();
       }
     }
@@ -85,7 +85,7 @@ public enum Lang
     String strMessage = lang.getMessage(objects);
     if (!strMessage.isEmpty())
     {
-      List<String> messages = new ArrayList();
+      List<String> messages = new ArrayList<String>();
       if (strMessage.contains("\n"))
       {
         String[] messageSplit = strMessage.split("\n");
@@ -98,7 +98,7 @@ public enum Lang
         messages.add(strMessage);
       }
       String message;
-      for (Iterator i$ = messages.iterator(); i$.hasNext(); sender.sendMessage(message)) {
+      for (Iterator<String> i$ = messages.iterator(); i$.hasNext(); sender.sendMessage(message)) {
         message = (String)i$.next();
       }
     }
@@ -109,7 +109,7 @@ public enum Lang
     String strMessage = lang.getRawMessage();
     if (!strMessage.isEmpty())
     {
-      List<String> messages = new ArrayList();
+      List<String> messages = new ArrayList<String>();
       if (strMessage.contains("\n"))
       {
         String[] messageSplit = strMessage.split("\n");
@@ -122,7 +122,7 @@ public enum Lang
         messages.add(strMessage);
       }
       String message;
-      for (Iterator i$ = messages.iterator(); i$.hasNext(); sender.sendMessage(message)) {
+      for (Iterator<String> i$ = messages.iterator(); i$.hasNext(); sender.sendMessage(message)) {
         message = (String)i$.next();
       }
     }
@@ -133,7 +133,7 @@ public enum Lang
     String strMessage = lang.getReplacedMessage(objects);
     if (!strMessage.isEmpty())
     {
-      List<String> messages = new ArrayList();
+      List<String> messages = new ArrayList<String>();
       if (strMessage.contains("\n"))
       {
         String[] messageSplit = strMessage.split("\n");
@@ -146,7 +146,7 @@ public enum Lang
         messages.add(strMessage);
       }
       String message;
-      for (Iterator i$ = messages.iterator(); i$.hasNext(); sender.sendMessage(message)) {
+      for (Iterator<String> i$ = messages.iterator(); i$.hasNext(); sender.sendMessage(message)) {
         message = (String)i$.next();
       }
     }
